@@ -1,0 +1,304 @@
+body{
+	overflow: auto;
+	background-color: rgb(100,100,100);
+}
+
+@media only screen and (min-width: 210mm){
+	body{
+		overflow-x: hidden;
+	}
+	#RegForm{
+		left: 50%;
+    	transform: translate(-50%, 0%);
+	}
+}
+
+
+@media print 
+{
+    @page {
+      size: A4; /* DIN A4 standard, Europe */
+      margin: 0cm;
+    }
+    html, body {
+        width: 170mm;
+        height: 257mm;
+        background: #FFF;
+        overflow:visible;
+    }
+}
+
+#RegForm{
+	width: 17cm;
+	height: 25.7cm;
+    position: absolute;
+}
+
+#RegFormBg{
+	position: absolute;
+	width: 21cm;
+	height: 29.7cm;
+	top: -2cm;
+	left: -2cm;
+	z-index: -1;
+}
+
+.fields{
+	position: absolute;
+	padding: 0px;
+	font-size: 0.35cm;
+	background-color: rgba(255,0,0,0);
+	z-index: 0;
+	text-align: center;
+}
+
+.row1{
+	top: 3.40cm;
+}
+
+	.Sem{
+		left: 1.8cm;
+		width: 1.5cm;
+	}
+
+	.Session{
+		left: 4.8cm;
+		width: 2cm;
+	}
+
+	.ClgRollNo{
+		left: 9.3cm;
+		width: 2cm;
+	}
+
+	.Branch{
+		left: 12.75cm;
+		width: 2cm;
+	}
+
+.row2{
+	top:3.9cm;
+}
+
+	.UIDno{
+		left: 2.3cm;
+		width: 4cm;
+	}
+
+	.UniReg{
+		left: 9.8cm;
+		width: 2.5cm;
+	}
+
+.SPhoto{
+	height: 4.5cm;
+	width: 3.5cm;
+	position: absolute;
+	z-index: 1;
+	top: 3.8cm;
+	left: 12.25cm;
+}
+.SPhoto img{
+	width: 100%;
+	height: 100%;
+}
+.boxPan{
+	position: absolute;
+	padding: 0px;
+	font-size: 0.35cm;
+	background-color: rgba(0,255,0,0);
+	z-index: 0;
+	text-transform: uppercase;
+}
+.Alpabt{
+	width: 0.5cm;
+	background-color: rgba(0,0,255,0);
+	text-align: center;
+	float: left;
+}
+
+.Name{
+	left: 0.8cm;
+	width: 11.01cm;
+}
+
+.SName{
+	top: 4.78cm;
+}
+
+.FName{
+	top: 5.6cm;
+}
+
+.MName{
+	top: 6.45cm;
+}
+
+/*address*/
+.TAdd,.PAdd{
+	left: 0.8cm;
+	height: 0.8cm;
+}
+.TAdd{
+	top: 7.3cm;
+	width: 11.51cm;
+}
+
+.PAdd{
+	top: 8.4cm;
+	width: 14.51cm;
+}
+
+.row3{
+	top: 9.2cm;
+}
+
+.row4{
+	top: 9.7cm;
+}
+
+	.SMobile,.PMobile{
+		left: 3.8cm;
+		width: 5.01cm;
+	}
+
+	.EMail,.Category{
+		left: 10.7cm;
+		width: 5.6cm;
+	}
+
+
+
+	/*PMobileNo*/
+
+.row5{
+	top: 10.4cm;
+}
+
+.row6{
+	top: 11cm;
+}
+
+.row7{
+	top: 11.6cm;
+}
+
+.col1{
+	left: 1.2cm;
+	width: 3.7cm;
+}
+
+.col2{
+	left: 5.15cm;
+	width: 3.7cm;
+}
+
+.col3{
+	left: 9.15cm;
+	width: 3.7cm;
+}
+
+.col4{
+	left: 13.15cm;
+	width: 3.7cm;
+}
+
+.sub{
+	font-size: 0.25cm;
+	height: 0.5cm;
+}
+
+.PreAcdPro{
+	position: absolute;
+	padding: 0px;
+	top: 12.9cm;
+	left: 2.2cm;
+	font-size: 0.27cm;
+	z-index: 0;
+	text-align: center;
+}
+
+.PreAcdPro td{
+	width: 2cm;
+	padding: 0px;
+	background-color: rgba(255,0,0,0);
+}
+.PreAcdPro th{
+	width: 3cm;
+	padding: 0px;
+	background-color: rgba(0,255,0,0);
+}
+
+.row8{
+	top: 15.95cm;
+}
+
+.hostel{
+	left: 8.3cm;
+	width: 0.9cm;
+	height: 0.35cm;
+}
+
+.hostel img,.day img{
+	margin-top: 0.05cm;
+	width: 60%;
+	height: 0.32cm;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.day{
+	left: 3.3cm;
+	width: 0.9cm;
+	height: 0.35cm;
+}
+
+.row9{
+	top: 16.3cm;
+}
+
+.Date{
+	width: 5.01cm;
+	left: 7.3cm;
+}
+
+.row10{
+	top: 16.65cm;
+}
+
+.AmtPd{
+	left: 6.8cm;
+	width: 2cm;
+}
+
+.BnkRcptNo{
+	left: 11.8cm;
+	width: 2.5cm;
+}
+
+.DT{
+	left: 1.7cm;
+	top: 19.8cm;
+	width: 2cm;
+}
+
+.PSign,.SSign{
+	height: 1.3cm;
+	width: 5cm;
+	position: absolute;
+	z-index: 1;
+	top: 19.6cm;
+}
+
+.PSign{
+	left: 5cm;
+}
+
+.SSign{
+	left: 10.5cm;
+}
+
+.SSign img,.PSign img{
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}

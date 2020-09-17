@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CCET | Chandigarh</title> 
+    
+        <!-- latest compiled and minified css -->
+        <link rel="stylesheet" href="bootstrap/bootstrap_/css/bootstrap.min.css" type="text/css">
+        
+        <!-- linking Stylesheet-->
+        <link rel="stylesheet" href="style/Index.css" type="text/css">
+
+        
+        <!--jquery Library -->
+        <script type="text/javascript" src="bootstrap/bootstrap_/js/jquery-3.3.1.min.js">
+        </script>
+        
+        <!-- latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="bootstrap/bootstrap_/js/bootstrap.min.js">
+        </script>
+        <meta name="viewport" content="width=device-width , initial-scale=1"> 
+       
+        <script type="text/javascript" src="script/navbar.js"></script>
+        
+        <script>
+            function resolveDev() {
+                document.getElementById("mainTab").style="height: auto;";
+                var devheight= document.getElementsByClassName("developer");
+                var maxheight=100;
+                var i;
+                for(i=0; i<devheight.length; i++){
+                    var tempheight=devheight.offsetHeight;
+
+                    if(maxheight<tempheight)
+                        maxheight=tempheight;
+                }
+                maxheight=maxheight+100+document.getElementById("devphoto").offsetHeight;
+                document.getElementById("mainTab").style="height: "+maxheight+"px; margin-bottom: 0px;";
+            }
+        </script>
+    </head>
+
+    <body onresize="ReSzNav()">
+        <div id="HdNav" onclick="comNav()">hello</div>
+        <div class="NvBrCnt" id="NvBrCnt">
+            <ul class="NvBr">
+                <li class="NvBrLt" id="HmBtn">
+                    <a href="home.php" id="active">Home</a>
+                </li>
+                <li class="NvBrRt" id="NvHd">
+                    <span class="glyphicon glyphicon-align-justify" onclick="expNav()"></span>
+                </li>
+                <li class="NvBrRt">
+                    <a href="SignUp.php"><span class="glyphicon glyphicon-user"></span> Sign up</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="LoginPage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="AboutUs.html"><span class="glyphicon glyphicon-align-justify"></span> About Us</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="ContactUs.html"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div id="bgimg" style='background-image:url("images/pkl.jpg");'>
+        </div>
+        <center><h1 id="pageName">DEVELOPERS</h1></center>
+
+        <div id="mainTab" style="margin-bottom: 0px;">
+            <div class="developer" id='abhi'>
+                <img src="images/abhi.jpg" class="cphoto" id="devphoto"/><br>
+                ABHIJEET<br>
+                <span id='abhijeet'></span>
+            </div>
+
+            <div class="developer" id='ashi'>
+                <img src="images/ashish2.jpg" class="cphoto"/><br> 
+                ASHISH<br>
+                <span id='ashish'></span>
+            </div>
+
+            <div class="developer" id='aayu'>
+                <img src="images/aayushi2.jpg" class="cphoto"/><br> 
+                AAYUSHI<br>
+                <span id='aayushi'></span>
+            </div>
+
+            <a href="dev1.html"><div class="developer" id='abol'>
+                <img src="images/aboli.jpg" class="cphoto"/><br> 
+                ABOLI<br>
+                <span id='aboli'></span>
+            </div></a>
+        </div>
+
+        <div class="devinfo">
+            We are the students of CSE department of CCET. This project is made under the continuous guidance of Dr. Dheerendra Singh.
+        </div>
+
+        <div class="ftr">
+            Copyright © CCET Degree Wing. All Rights Reserved | Contact Us: +91 90000 00000
+        </div>
+    </body>
+</html>

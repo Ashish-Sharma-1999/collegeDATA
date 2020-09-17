@@ -1,0 +1,47 @@
+#lastTab{
+    margin:10% auto 10%;
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
+    overflow: auto;
+}
+
+.LastTable tr{
+    border-bottom:1px solid rgba(50,50,50,0.5);
+}
+.LastTable tr:nth-child(even) {
+    background-color: rgb(170,170,170);
+    color: black;
+    font-size: 15px;
+}
+
+.LastTable tr:nth-child(odd) {
+    background-color: rgb(220,220,220);
+    color: black;
+    font-size: 15px;
+}
+
+.LastTable td,th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 50%;
+    min-width: 150px;
+}
+.LastTable caption{
+    color: black;
+}
+.LastTable{
+    width: 100%;
+}
+
+#nocol{
+    background-color: rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 650px){
+    #lastTab{
+        width: 95%;
+    }
+}

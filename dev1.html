@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Developers</title>
+
+		<!-- latest compiled and minified css -->
+        <link rel="stylesheet" href="bootstrap/bootstrap_/css/bootstrap.min.css" type="text/css">
+        
+        <!-- linking Stylesheet-->
+        <link rel="stylesheet" href="style/Index.css" type="text/css">
+
+        <link rel="stylesheet" href="style/dev.css" type="text/css">
+        
+        <!--jquery Library -->
+        <script type="text/javascript" src="bootstrap/bootstrap_/js/jquery-3.3.1.min.js">
+        </script>
+        
+        <!-- latest compiled and minified JavaScript -->
+        <script type="text/javascript" src="bootstrap/bootstrap_/js/bootstrap.min.js">
+        </script>
+        <meta name="viewport" content="width=device-width , initial-scale=1"> 
+       
+        <script type="text/javascript" src="script/navbar.js"></script>
+        
+        <script type="text/javascript" src="script/dev.js"></script>
+	</head>
+	
+	<body onload="startrotation(),ReSzNav()" onresize="ReSzNav()">
+        <div id="HdNav" onclick="comNav()">hello</div>
+        <div class="NvBrCnt" id="NvBrCnt">
+            <ul class="NvBr">
+                <li class="NvBrLt" id="HmBtn">
+                    <a href="home.php" id="active">Home</a>
+                </li>
+                <li class="NvBrRt" id="NvHd">
+                    <span class="glyphicon glyphicon-align-justify" onclick="expNav()"></span>
+                </li>
+                <li class="NvBrRt">
+                    <a href="SignUp.php"><span class="glyphicon glyphicon-user"></span> Sign up</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="LoginPage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="AboutUs.html"><span class="glyphicon glyphicon-align-justify"></span> About Us</a>
+                </li>
+                <li class="NvBrRt">
+                    <a href="ContactUs.html"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div id="bgimg" style='background-image:url("images/pkl.jpg");'>
+        </div>
+        <center><h1 id="pageName">DEVELOPERS</h1></center>
+
+        <div id="mainTab" style="margin-top: 0px;">
+		<div id="stage" >
+			
+			<!--<div id='backa'></div>
+			<div id='backb'></div>-->
+
+			<div id='circle'></div>
+
+			<div id="devtextbox">HELLO
+			</div>
+
+			<div class="devphotobox">
+				<img src="images/abhi.jpg" class="cphoto" id="devphoto"/>
+			</div>
+			
+			<div class="dot"></div>
+			
+			<div class="devphotobox">
+				<img src="images/ashish2.jpg" class="cphoto"/>
+			</div>
+
+			<div class="dot"></div>
+			
+			<div class="devphotobox">
+				<img src="images/aayushi2.jpg" class="cphoto"/>
+			</div>
+
+			<div class="dot"></div>
+			
+			<div class="devphotobox">
+				<img src="images/aboli.jpg" class="cphoto"/>
+			</div>
+
+			<div class="dot"></div>
+
+		</div>
+		</div>
+
+		<div class="devinfo">
+            We are the students of CSE department of CCET. This project is made under the continuous guidance of Dr. Dheerendra Singh.
+        </div>
+
+        <div class="ftr">
+            Copyright © CCET Degree Wing. All Rights Reserved | Contact Us: +91 90000 00000
+        </div>
+	</body>
+</html>
